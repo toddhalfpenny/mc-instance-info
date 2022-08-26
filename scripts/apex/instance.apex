@@ -7,3 +7,5 @@
 
 String instanceName = [select InstanceName from Organization limit 1].InstanceName;
 System.debug('Instance ' + instanceName);
+
+InstanceStatusCallout.makeGetCallout(instanceName);
